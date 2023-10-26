@@ -30,3 +30,16 @@ Enter password: 1234
 Access denied
 Too many failed attempts. Access denied.
 """
+i = 0
+while 3 > i:
+    user = str(input("Enter username = "))
+    pas = str(input("Enter password = "))
+    if user == "admin" and pas == "12345":
+        print("Access granted")
+        break
+    else:
+        print("Access denied")
+        i = i + 1
+        if i == 3:
+            print("Too many failed attempts. Access denied.")
+
